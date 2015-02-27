@@ -10,4 +10,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.network :forwarded_port, guest: 3000, host: 3000, host_ip: "127.0.0.1"
 
+$script = <<SCRIPT
+
+cd /vagrant
+rails server -b 0.0.0.0 -d
+
+SCRIPT
+
+  config.vm.provision "shell", inline: $script, run: "always"
+
+
 end
