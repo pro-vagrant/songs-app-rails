@@ -2,7 +2,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.vm.box = "rails-v0.5.5"
+  config.vm.box = "gajdaw/rails"
 
   config.vm.provider "virtualbox" do |v|
     v.memory = 1024
