@@ -5,11 +5,11 @@ How to run the application?
 
 Clone the repo:
 
-    $ git clone https://github.com/pro-vagrant/songs-rails-app.git
+    $ git clone https://github.com/pro-vagrant/songs-app-rails.git
 
 Enter the directory:
 
-    $ cd songs-rails-app
+    $ cd songs-app-rails
 
 Boot VM:
 
